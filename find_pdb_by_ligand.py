@@ -1,5 +1,5 @@
 """
-pdb_search.py — Helper tool for the GemmiMol Viewer project.
+find_pdb_by_ligand.py — Helper tool for the GemmiMol Viewer project.
 
 Find all PDB entries that contain a given CCD (ligand) code.
 This is an optional companion to `show_gemmimol`: use it to discover
