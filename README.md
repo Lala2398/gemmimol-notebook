@@ -52,7 +52,7 @@ gemmimol-notebook/
 ├── README.md                 # this file
 ├── show_gemmimol.py          # main viewer  → from show_gemmimol import show_gemmimol
 ├── find_pdb_by_ligand.py     # companion search tool (optional)
-└── [GemmiMolViewer.ipynb](https://github.com/Lala2398/gemmimol-notebook/blob/main/GemmiMolViewer.ipynb)       # demo / tutorial notebook
+└── GemmiMolViewer.ipynb      # demo / tutorial notebook
 ```
 
 Two independent modules:
