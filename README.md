@@ -48,11 +48,12 @@ Typical use cases:
 
 ```
 gemmimol-notebook/
-├── LICENSE                   # MIT license for this wrapper
-├── README.md                 # this file
-├── show_gemmimol.py          # main viewer  → from show_gemmimol import show_gemmimol
-├── find_pdb_by_ligand.py     # companion search tool (optional)
-└── GemmiMolViewer.ipynb      # demo / tutorial notebook
+├── LICENSE                     # MIT license for this wrapper
+├── README.md                   # this file
+├── show_gemmimol.py            # main viewer  → from show_gemmimol import show_gemmimol
+├── find_pdb_by_ligand.py       # companion search tool (optional)
+└── GemmiMolViewer.ipynb        # demo / tutorial notebook
+└── Test4GemmiMolNotebook.ipynb # test version
 ```
 
 Two independent modules:
@@ -84,8 +85,8 @@ Download the modules into your Colab session, then import:
 
 ```python
 !pip install gemmi requests -q
-!wget -q https://raw.githubusercontent.com/<Lala2398>/gemmimol-notebook/main/show_gemmimol.py
-!wget -q https://raw.githubusercontent.com/<Lala2398>/gemmimol-notebook/main/find_pdb_by_ligand.py
+!wget -q https://raw.githubusercontent.com/Lala2398/gemmimol-notebook/main/show_gemmimol.py
+!wget -q https://raw.githubusercontent.com/Lala2398/gemmimol-notebook/main/find_pdb_by_ligand.py
 
 from show_gemmimol import show_gemmimol, clear_cache
 from find_pdb_by_ligand import find_pdb_by_ligand
