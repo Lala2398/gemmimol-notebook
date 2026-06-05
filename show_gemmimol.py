@@ -83,7 +83,6 @@ Original file is located at
     -- Mouse / menu ----------------------------------------------------
       Delete menu acts on the selected atom / residue / chain
 
-    Reference: https://gemmimol.github.io/  (the official viewer help)
     ===================================================================
 """
 
