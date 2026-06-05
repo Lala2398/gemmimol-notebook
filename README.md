@@ -227,19 +227,6 @@ important to know the difference between them:
 - **Function docstring** — attached to the `show_gemmimol` function. It contains
   short **usage examples** (how to call the function).
 
-### Why this matters
-
-When you write:
-
-```python
-from show_gemmimol import show_gemmimol
-```
-
-the name `show_gemmimol` now refers to the **function**, not the module. So
-`show_gemmimol.__doc__` shows only the short function docstring — not the full
-keyboard-shortcut reference. To see the module docstring you must import the
-module itself.
-
 ### Print both docstrings
 
 ```python
@@ -261,20 +248,6 @@ print(show_gemmimol.__doc__)
 | `from show_gemmimol import show_gemmimol` | Imports the **function** for normal use. |
 | `print(gm_module.__doc__)` | Prints the **module** docstring — the full keyboard-shortcut reference. |
 | `print(show_gemmimol.__doc__)` | Prints the **function** docstring — the usage examples. |
-
-> **Note on the alias.** The alias (`as gm_module`) is what keeps the two names
-> separate. Without it, `import show_gemmimol` and
-> `from show_gemmimol import show_gemmimol` would both bind to the name
-> `show_gemmimol`, and the second line would overwrite the first — leaving you
-> with only the function docstring again.
-
-### Quick reference
-
-| You write | What you see |
-|---|---|
-| `print(show_gemmimol.__doc__)` (after `from ... import ...`) | Short **function** docstring (usage examples) |
-| `print(gm_module.__doc__)` (after `import ... as gm_module`) | Full **module** docstring (keyboard shortcuts) |
-| `help(gm_module)` | The module docstring **plus** a list of all functions |
 
 ---
 
